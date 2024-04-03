@@ -104,8 +104,6 @@
                     </ul>
                   </li>
 
-                 
-
                   <li class="nav-item">
                     <a class="nav-link" href="contact-us.html">Contact Us</a>
                   </li>
@@ -152,11 +150,11 @@
               <div class="product-slider">
                 <div
                   class="product-slider-item my-4"
-                  data-image="images/products/products-1.jpg"
+                  data-image="https://wdo.org/wp-content/uploads/2019/06/IMG_2981.jpg"
                 >
                   <img
                     class="img-fluid w-100"
-                    src="images/products/products-1.jpg"
+                    src="https://wdo.org/wp-content/uploads/2019/06/IMG_2981.jpg"
                     alt="product-img"
                   />
                 </div>
@@ -446,28 +444,30 @@
               </div>
               <!-- User Profile widget -->
               <div class="widget user text-center">
-                
                 <h4><a href="user-profile.html">Product Name</a></h4>
                 <p class="member-time">Product Description</p>
                 <a href="single.html">Total Sold 200+</a>
                 <ul class="list-inline mt-20">
                   <li class="list-inline-item">
-                    <a
-                      href="contact-us.html"
-                      class="btn login-button d-inline-block px-lg-5 my-1 px-md-3"
-                      >Buy Now</a
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      class="btn login-button rounded-0 d-inline-block px-lg-5 my-1 px-md-3"
                     >
+                      Free Claim
+                    </button>
                   </li>
                   <li class="list-inline-item">
                     <a
                       href="single.html"
-                      class="btn add-button d-inline-block ml-n1 my-1 px-lg-4 px-md-3"
+                      class="btn add-button rounded-0 d-inline-block ml-n1 my-1 px-lg-4 px-md-3"
                       >Add To Cart</a
                     >
                   </li>
                 </ul>
               </div>
-             
+
               <!-- Rate Widget -->
               <div class="widget rate">
                 <!-- Heading -->
@@ -479,15 +479,13 @@
                 <!-- Rate -->
                 <div class="starrr"></div>
               </div>
-              
+
               <!-- Coupon Widget -->
               <div class="widget coupon text-center">
                 <!-- Coupon description -->
-                <p>
-                  Have a great product to post ? Share it with your friend.
-                </p>
+                <p>Have a great product to post ? Share it with your friend.</p>
                 <!-- Submii button -->
-                <a href="single.html" class="btn btn-transparent-white"
+                <a href="single.html" class="btn rounded-0 btn-transparent-white"
                   >Share Now</a
                 >
               </div>
@@ -497,6 +495,59 @@
       </div>
       <!-- Container End -->
     </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5" id="staticBackdropLabel">
+              Request for Free
+            </h3>
+           
+          </div>
+          <div class="modal-body">
+            <div class="personal-info px-5">
+              <!-- First Name -->
+              <div class="form-group">
+                <label for="first-name">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name"
+                />
+              </div>
+              <!-- Last Name -->
+              <div class="form-group">
+                <label for="first-name">Reason</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name"
+                />
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn login-button rounded-0"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn add-button rounded-0">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer section section-sm">
@@ -613,6 +664,16 @@
     </footer>
 
     <!-- JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
     <script src="plugins/jquery/jquery.min.js"></script>
     <script src="plugins/bootstrap/popper.min.js"></script>
     <script src="plugins/bootstrap/bootstrap.min.js"></script>
